@@ -1,0 +1,104 @@
+mat-chip {
+    max-width: 100px;
+}
+
+.verde {
+    background-color: green !important;
+    color: white;
+}
+
+.marron {
+    background-color: burlywood !important;
+}
+
+.rojo {
+    background-color: red !important;
+    color: white;
+}
+
+.negro {
+    background-color: black !important;
+    color: white;
+    text-align: center;
+}
+
+.blanco {
+    background-color: white !important;
+    color: black !important;
+}
+
+.azul {
+    background-color: rgb(32, 32, 148) !important;
+    color: white;
+}
+
+.celeste {
+    background-color: rgb(68, 224, 230) !important;
+}
+
+.bordo {
+    background-color: rgb(114, 41, 41) !important;
+    color: white;
+}
+
+/// para los icons
+.verde-icon {
+    color: green !important;
+}
+
+.marron-icon {
+    color: burlywood !important;
+}
+
+.rojo-icon {
+    color: red !important;
+}
+
+.negro-icon {
+    color: black !important;
+}
+
+.blanco-icon {
+    color: white !important;
+}
+
+.azul-icon {
+    color: rgb(32, 32, 148) !important;
+}
+
+.celeste-icon {
+    color: rgb(68, 224, 230) !important;
+}
+
+.bordo-icon {
+    color: rgb(114, 41, 41) !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+// estilos de snackbar
+.mat-form-field {
+    margin-right: 8px;
+}
+
+// clase creada para las animaciones
+.open-close-container {
+    color: 'red';
+    width: 100px
+}
+
+////// CLASES PARA QUE CUANDO ENTRE EN DETALLE, ME RESALTE EL PRODUCTO CON EL COLOR CORRESPONDIENTE CON UN BORDER DE 3 PX
+.border {
+    border: 3px solid red
+}

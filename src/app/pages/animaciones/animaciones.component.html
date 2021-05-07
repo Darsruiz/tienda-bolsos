@@ -1,0 +1,6 @@
+<button (click)="toggle()">CAMBIAR</button>
+
+<div *ngIf="isOpen" [@inOutAnimationss]="isOpen ? 'open' : 'closed'" class="open-close-container">
+
+    <p> The box is open {{ isOpen ? 'OPEN' : 'CLOSED'}}</p>
+</div>

@@ -1,0 +1,31 @@
+<div>
+    <mat-form-field appearance="legacy">
+        <mat-label>Texto</mat-label>
+        <input [(ngModel)]="texto" (keyup)="changeText($event)" matInput placeholder="Texto">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>Texto a filtrar</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Colores</mat-label>
+        <mat-select [(ngModel)]="filtro.color" (selectionChange)="changeColor($event)">
+            <mat-option *ngFor="let color of colores" [value]="color">
+                {{ color | titlecase }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Tipo de Producto</mat-label>
+        <mat-select [(ngModel)]="filtro.tipo" (selectionChange)="changeProductType($event)">
+            <mat-option *ngFor="let tipo of tipos" [value]="tipo">
+                {{ tipo | titlecase }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+
+
+
+    <ngx-slider (highValueChange)="changeSlideUperPrice($event)" (valueChange)="changeSlideLowerPrice($event)" [(value)]="value" [(highValue)]="highValue" [options]="options"></ngx-slider>
+</div>
